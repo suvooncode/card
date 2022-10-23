@@ -1,0 +1,253 @@
+@media(min-width:992px) {
+	
+}
+@media(min-width:1200px) {
+	.container{
+		max-width:1040px;
+	}
+}
+@media(max-width:1365px) {
+	
+}
+@media(max-width:1199px) {
+	.each-footer-contact h4 {
+		letter-spacing: 0px;
+	}
+	.procedure-overview-area {
+		min-height: 600px;
+	}
+}
+
+@media(max-width:991px) {
+	.desktop-header{
+		display:none;
+	}
+	.mobile-header{
+		display:block;
+	}
+	.banner-content-area {
+		bottom: -30px;
+	}
+	.banner-area {
+		min-height: calc(100vh - 80px);
+		position: relative;
+	}
+	.natural-approch-right-part {
+		padding-left: 0px;
+		padding-top: 50px;
+	}
+	.natural-approch-area {
+		padding: 105px 0px;
+	}
+	.natural-approch-area:after {
+		top: 35%;
+	}
+	.natural-approch-area-button {
+		display:none;
+	}
+	.doctor-section-image {
+		position: relative;
+		width: 100%;
+	}
+	.doctor-section {
+		padding-top: 0px;
+		padding-bottom: 70px;
+		min-height: auto;
+	}
+	.doctor-content{
+		padding-top:150px;
+	}
+	.doctor-content:after {
+		position: absolute;
+		width: 660px;
+		height: 141px;
+		content: '';
+		left: 50%;
+		top: 10%;
+		transform: translateX(-50%);
+	}
+	.doctor-content h2 {
+		text-align:center
+	}
+	.asf-area {
+		padding: 80px 0px;
+	}
+	.testimonial-page {
+		padding: 80px 0px 100px;
+	}
+	.testimonial-page h2 {
+		text-align: center;
+	}
+	.footer-upper-area{
+		text-align:center;
+		padding: 85px 0px 40px;
+	}
+	.footer-content-area {
+		padding-left: 0px;
+		border-left: 0px solid #AFB4C9;
+		padding-top: 10px;
+	}
+	.footer-logo{
+		padding-bottom:50px;
+	}
+	.each-footer-contact {
+		min-height: auto;
+	}
+	.footer-bottom-area ul li:first-child{
+		display:block;
+		padding-right:0px;
+		padding-bottom: 10px;
+	}
+	.footer-bottom-area ul li:nth-child(2){
+		padding-left:0px;
+		border:0px;
+	}
+	.footer-bottom-area {
+		padding: 15px 0px;
+	}
+	.service-section{
+		display:none;
+	}
+	.mobile-service-setion{
+		display:block;
+	}
+	.mobile-screen-button{
+		display:block;
+	}
+	.inner-banner-contnet {
+		position: relative;
+		width: 100%;
+		left: 0px;
+		top: 0%;
+	   transform: translateY(0%);
+	   margin-top:-100px;
+	}
+	.banner-content-wrapper {
+		margin-left: auto;
+		margin-right:auto;
+	}
+	.inner-page-banner-width-content {
+		background-position: left center;
+	}
+	.testimonial-inject-box {
+		padding: 70px 35px 30px;
+		max-width: 100%;
+		margin-right: 0px;
+		margin-bottom: 40px;
+		float: none;
+		display: inline-block;
+		-webkit-box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 41%);
+		-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.41);
+		box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 41%);
+	}
+	.procedure-overview-images {
+		height: 100%;
+		width: 100%;
+		background:none !important;
+	}
+	.procedure-overview-images img{
+		display:block ;
+	}
+	.procedure-overview-area {
+		min-height: auto;
+		padding: 100px 0px;
+	}
+}
+@media(max-width:767px) {
+	h2{
+		font-size:25px;
+	}
+	h3 {
+		font-size: 17px;
+	}
+	.logo-area a img{
+		max-width:250px;
+	}
+	.common-button {
+		font-size: 18px;
+	}
+	.natural-approch-area-wrapper {
+		padding: 0px 20px;
+	}
+	.natural-approch-area:after {
+		top: 35%;
+		width:100%;
+	}
+	.natural-approch-left-part h2 {
+		font-size: 30px;
+		line-height: 50px;
+		letter-spacing: 1px;
+		margin-bottom: 10px;
+	}
+	.natural-approch-left-part p {
+		font-size: 20px;
+	}
+	.natural-approch-area {
+		padding: 75px 0px;
+	}
+	.doctor-content:after {
+		width: 100%;
+		top: 15px;
+	}
+	.doctor-content {
+		padding: 85px 15px 0px;
+	}
+	.doctor-content h2 {
+		font-size: 25px;
+	}
+	.doctor-content p {
+		margin-bottom: 35px;
+	}
+	.asf-area-content h2 {
+		font-size: 25px;
+		letter-spacing: 1.5px;
+		margin-bottom: 35px;
+	}
+	.asf-area {
+		padding: 60px 0px;
+	}
+	.testimonial-page h2 {
+		font-size: 25px;
+		letter-spacing: 1.5px;
+		margin-bottom: 80px;
+	}
+	.each-map-area iframe{
+		height:250px !important
+	}
+	.each-footer-contact h4 {
+		font-size: 21px;
+		letter-spacing: 2px;
+	}
+	.mobile-logo-area img {
+		width: 70px;
+	}
+	.banner-content-wrapper h2 {
+		font-size: 25px;
+	}
+	.banner-content-wrapper {
+		padding: 50px 25px 30px;
+	}
+	.inner-page-banner-width-content {
+		min-height: 70vh;
+	}
+	.procedure-page-content {
+		padding: 50px 0px;
+	}
+	.testimonial-inject-box p {
+		font-size: 22px;
+	}
+	.page-heading-area h2 {
+		font-size: 30px;
+	}
+	.each-tab-content-area ul li {
+		display: block;
+		width: 100%;
+	}
+	.procedure-overview-content h2 {
+		font-size: 25px;
+	}
+	.procedure-overview-area {
+		min-height: auto;
+		padding: 50px 0px;
+	}
+}

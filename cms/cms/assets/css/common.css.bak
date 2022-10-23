@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	line-height:32px;
+	color:#3C425F;
+	overflow-x: hidden;
+	/*background:#F7F7F7;*/
+}
+/*------------------------------------*\
+	FONT RESET
+\*------------------------------------*/
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{ 
+	border:0;
+}
+address,caption,cite,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:300;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+a{
+	color:#d9a883;
+}
+a:hover{
+	text-decoration:none;
+}
+ 
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+/*--- QUOTES ---*/
+blockquote{
+	margin:0 60px 0 45px;
+	border-left:5px solid #ccc;
+	padding-left:10px;
+	text-indent:-0.4em;
+}
+blockquote b{
+	display:block;
+	text-indent:0;
+}
+
+img{ 
+	max-width:100%; 
+	height:auto
+}
+/************************** FONTS CSS********************/
+h1{
+	
+}
+
+h2{
+	
+}
+h3{
+	
+}
+h4{
+	
+}
+h5{
+	
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;
+	line-height:32px;
+	color:#3C425F;
+	letter-spacing:0.5px;
+	margin-bottom:25px;
+}
+/************************** Page CSS********************/
+.full-width{
+	width:100vw;
+	margin-left:-50vw;
+	left:50%;
+	position:relative;
+}
+.common-background-style{
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+.common-button{
+	font-family: 'Optima Bold';
+	font-size:20px;
+	color:#FFFFFF;
+    border: 0px solid #fff;
+    background-color: #E2AC82;
+	padding: 13px 45px 13px 30px;
+    display: inline-block;
+    transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	letter-spacing: 1.5px;
+    -webkit-transition: all 0.5s;
+	-webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 15%);
+	-moz-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 15%);
+	box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 15%);
+}
+.common-button:hover{
+	background-color: #afb4c9;
+	color:#fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a.common-link{
+	font-family: 'Optima Bold';
+	font-size:20px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+a.common-link:hover{
+	color: #d9a883;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.common-arrow{
+	width:auto;
+	height:auto;
+	margin:0px;
+}
+.common-arrow:after{
+	display:none;
+}
+/************************* Breadcrumb Css **************************/
+.site-breadcrumb {
+    font-family: 'Montserrat Regular ';
+    font-size: 15px;
+    color: #AFB4C9;
+	line-height:35px;
+	margin:15px 0px;
+}
+.site-breadcrumb strong{
+	font-weight:normal;
+}
+.site-breadcrumb a {
+    font-family: 'Montserrat Bold';
+    font-size: 15px;
+    color: #AFB4C9;
+	line-height:35px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+	letter-spacing: 1px;
+}
+.site-breadcrumb a:hover{
+	color: #D4A65C;
+	transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.site-breadcrumb span{
+	margin:0px 5px;
+	font-weight:300;
+}
+
+/*************************** Quick Link List **********************/
+
+/*************************** Pagination css*********************/
+.pagination {
+    width: 100%;
+	text-align:center;
+	display:block
+}
+.pagination ul{
+	padding:0px;
+	margin:0px;
+}
+.pagination ul li{
+	display:inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	font-size:17px;
+	color:#212020;
+	margin:0px 10px;
+}
+.pagination ul li a{
+	color:#212020;
+	font-weight:300;
+}
+.pagination ul li a:hover{
+	color:#85CBF8;
+}
+/*************************** End:Pagination css *********************/
+

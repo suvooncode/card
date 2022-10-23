@@ -1,0 +1,472 @@
+/*************** Import Css **************/
+
+@import "common.css";
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+/*font-family: 'Oxanium', cursive;*/
+/*font-family: 'Racing Sans One', cursive;*/
+/********************* Header Css ******************/
+.header-area{
+	background: #1C1B1B;
+	box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.25);
+	padding:18px 0px;
+}
+.logo-area a{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	color:#fff;
+}
+.logo-area img{
+	margin-right:15px;
+}
+.login-button a{
+	color: #C10AD1;
+	background: #343333;
+	box-shadow: 1px 16px 12px -4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	font-family: 'Racing Sans One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	display: inline-block;
+	padding:10px 50px;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.login-button a:hover{
+	color: #343333;
+	background: #C10AD1;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.banner-area{
+	position:relative;
+	min-height:567px;
+	padding-top:80px;
+	background-position:right center;
+}
+.banner-content{
+	max-width: 546px;
+	border: 1.5px solid #C10AD1;
+	border-radius: 7px;
+	padding:20px 50px 50px;
+}
+.banner-content-wrapper{
+	max-width:340px;
+}
+.banner-content-wrapper h2{
+	font-family: 'Racing Sans One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+	text-align:right;
+	position:relative;
+	margin-bottom:18px;
+}
+.banner-content-wrapper h2:before{
+	width:100%;
+	height:2px;
+	background:#fff;
+	content:'';
+	position:absolute;
+	left:0px;
+	top:50%;
+	transform:translatey(-50%);
+}
+.banner-content-wrapper h2 em{
+	background:#090307;
+	padding-left:40px;
+	position:relative;
+}
+.banner-content-wrapper h1{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: 0.065em;
+	color: #FFFFFF;
+	margin-bottom:15px;
+}
+.banner-content-wrapper h1 span{
+	background: #C10AD1;
+	background: linear-gradient(to bottom, #C10AD1 0%, #566576d9 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.banner-content-wrapper p{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: 0.065em;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+.banner-content-wrapper a{
+	color: #C10AD1;
+	background: #343333;
+	box-shadow: 1px 16px 12px -4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	font-family: 'Racing Sans One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 25px;
+	display: inline-block;
+	padding:10px 50px;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.banner-content-wrapper a:hover{
+	color: #343333;
+	background: #C10AD1;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.banner-image{
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.about-area{
+	padding:30px 0px;
+	background:#fff;
+}
+.about-area h2{
+	font-family: 'Racing Sans One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 57px;
+	color: #2C2C2C;
+	margin-bottom:20px;
+}
+.about-area h2 span{
+	color:#C10AD1;
+}
+.about-area p{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.4);
+	margin:0px;
+}
+.recent-cards-area{
+	padding:90px 0px;
+}
+.recent-cards-text p{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	color: #FFFFFF;
+	line-height: 173.5%;
+	max-width:779px;
+}
+.card-slider{
+	position:relative;
+}
+.card-slider:before{
+	position:absolute;
+	top:-90px;
+	left:50%;
+	transform:translatex(-50%);
+	width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 60px solid #fff;
+	content:'';
+}
+.card-slider:after{
+	position:absolute;
+	bottom:-95px;
+	left:50%;
+	transform:translatex(-50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid #fff;
+	content:'';
+}
+.each-services{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 19px #241229;
+	border-radius: 10px;
+	padding:35px 15px 25px;
+}
+.each-services h4{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	color: #A5A5A5;
+	margin-bottom:20px;
+}
+.each-services p{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 173.5%;
+	text-align: justify;
+	color: #898989;
+	margin:0px;
+}
+.services-area{
+	padding:80px 0px 125px;
+	background:#fff;
+}
+.newsletter-wrapper{
+	max-width:1031px;
+	width:100%;
+	background: #242025;
+	box-shadow: 12px 4px 25px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	padding:27px 30px;
+	margin-bottom: -55px;
+}
+.newsletter-heading h3{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	color: #C10AD1;
+	margin-right:15px;
+}
+.newsletter-wrapper form input{
+	border-radius: 30px;
+	border:1px solid #fff;
+	font-size:20px;
+	font-family: 'Oxanium', cursive;
+	color:#fff;
+	font-size:20px;
+	width:100%;
+	background:transparent;
+	padding:3px 15px
+}
+.newsletter-wrapper form button{
+	background:none;
+	border:none;
+	font-family: 'Oxanium';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 173.5%;
+	text-align: center;
+	color: #FFFFFF;
+	margin-left:15px;
+}
+.news-letter-form{
+	width:calc(100% - 250px)
+}
+.footer-middle-content p{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 173.5%;
+	text-align: center;
+	color: #FFFFFF;
+}
+.footer-social h5{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 721;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom:10px;
+}
+.footer-social ul{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.footer-social ul li{
+	margin-left:10px;
+}
+.footer-area{
+	padding:80px 0px 60px;
+}
+.newsletter-area{
+	position:relative;
+}
+.common-modal .modal-content{
+	background:#000;
+	padding:40px 40px 20px;
+}
+.common-modal .modal-content-wrapper{
+	border: 1px solid #C10AD1;
+	border-radius: 20px;
+	padding:20px;
+}
+.modal-content{
+	position:relative;
+}
+.modal-close-icon{
+	position:absolute;
+	top:5px;
+	right:15px;
+	cursor:pointer;
+}
+.modal-content .form-group label{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+.modal-content .form-control-plaintext {
+    border-bottom:1px solid #fff;
+}
+.modal-content .form-control {
+    background:transparent;
+	border-radius:0px;
+	border:0px;
+	border-bottom:1px solid #fff;
+}
+.modal-content .form-group {
+    margin-bottom: 2rem;
+}
+.submit-button button{
+	color: #C10AD1;
+	background: #343333;
+	box-shadow: 1px 16px 12px -4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	font-family: 'Racing Sans One', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 19px;
+	display: inline-block;
+	padding:10px 50px;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.submit-button button:hover{
+	color: #343333;
+	background: #C10AD1;
+	transition: all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+.register-feild a{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 371;
+	font-size: 15px;
+	line-height: 19px;
+	color: #FFFFFF;
+}
+.card-filter-area{
+	position:relative;
+	width:200px;
+}
+.card-filter-area:after{
+	position:absolute;
+	top:0px;
+	left:0px;
+	content:url('../images/Ellipse 1.png');
+	z-index:-1;
+}
+.card-filter-area ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	padding-top:150px;
+	text-align:right;
+	padding-right: 30px;
+}
+.card-filter-area ul li a{
+	font-family: 'Oxanium', cursive;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	color: #FFFFFF;
+	display:inline-block;
+}
+.cards-area{
+	padding:100px 200px 100px 0px;;
+	display:flex;
+	position:relative;
+}
+.card-filter-area ul li:not(:last-child) a {
+	padding-bottom:10px;
+	margin-bottom:10px;
+}
+.card-filter-area ul li.active a{
+	border-bottom:1px solid #fff;
+}
+.each-card{
+	position:relative;
+	margin-bottom:30px;
+}
+.card-content{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	font-family: 'Oxanium', cursive;
+	color:#fff;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 23px;
+	color: #FFFFFF;
+	width: 100%;
+    text-align: center;
+}
+.cards-area-wrapper{
+	width:calc(100% - 200px);
+	padding:0px 15px;
+}
+.cards-area-wrapper .row {
+	margin:0px -30px;
+}
+.cards-area-wrapper .row .col-lg-4{
+	padding:0px 30px;
+}
+.each-card img{
+	filter: grayscale(100%) brightness(50%);
+}
+.cards-area:after{
+	position:absolute;
+	top:120px;
+	right:0px;
+	content:url('../images/Ellipse 2.png');
+	z-index:-1;
+}
+.loadmore-button a{
+	color: #C10AD1;
+    background: #343333;
+    box-shadow: 1px 16px 12px -4px rgb(0 0 0 / 25%);
+    border-radius: 30px;
+    font-family: 'Racing Sans One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 10px 50px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.each-card.active img {
+    filter: grayscale(0%) brightness(100%);
+}
+.each-card.active .card-content{
+	display:none;
+}
