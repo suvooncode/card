@@ -41,6 +41,8 @@
 		}
 	}
 
+	
+
 	if(isset($_POST["save"]))
 	{
 		$name= $_POST["name"];
@@ -243,7 +245,7 @@
 		</div>
 	</footer>
 	<!-- Modal -->
-	<div class="modal fade common-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
+	<div class="modal fade common-modal login-modal" id="exampleModalCenter" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
@@ -273,7 +275,11 @@
 				</div>
 				<div class="register-feild text-center mt-2">
 					<a href="" data-toggle="modal" data-target="#exampleModalCenter2">Click Here To Register</a>
+					<br>
+					<a href="" data-toggle="modal" data-target="#exampleModalCenter3" onclick='login_modal_hide()'>Forgot Password?</a>
+					
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -322,6 +328,34 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade common-modal" id="exampleModalCenter3" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-close-icon" class="close" data-dismiss="modal" aria-label="Close"><img
+						src="assets/images/Untitled design (65) 1.png" width="19" height="20" border="0" alt=""></div>
+				<div class="modal-content-wrapper">
+					<strong style="color:green;"><?=$response?></strong>
+					<form action="" method="POST">
+						<div class="form-group row">
+							<label for="staticEmail" class="col-sm-3 col-form-label">Email</label>
+							<div class="col-sm-9">
+								<input type="email" id='forgot_email' name="email" class="form-control-plaintext">
+							</div>
+						</div>
+						
+						<div class="form-group row mb-0">
+							<div class="col-sm-12 text-right submit-button">
+								<button type="button" id='change_password' name="change_password" >Change Password</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 	<!-- End::Footer area -->
 	<!-- All js links -->
 	<script src="assets/js/swiper.min.js"></script>
@@ -329,11 +363,32 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+	<style>
+		.form-control-plaintext
+		{
+			color:white;
+		}
+	</style>
 	<script>
 		$(function(){
 			<?php if($save_user) { ?>
 				swal("User Registered","user registered successfully","success");
 			<?php } ?>
+
+			$('#change_password').click(function(){
+				
+				var forgot_email = $('#forgot_email').val();
+
+				$.ajax({
+					url:"ajax/forgot_password.php",
+					method:"POST",
+					data:{forgot_email:forgot_email}
+				}).done(function(response){
+					
+					$('#exampleModalCenter3').modal('hide');
+					swal("","Password updated successfully. Kindly check your mail","success");
+				});
+			})
 		});
 
 		function checkpass(conf_pass)
@@ -348,7 +403,16 @@
 				$("#response").html("<p style='color:red'>Password is not matching !</p>");
 			}
 		}
+
+		function login_modal_hide()
+		{
+			$('.login-modal').modal('hide');
+		}
+
+		
+
 	</script>
+	
 </body>
 
 </html>
