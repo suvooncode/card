@@ -33,7 +33,7 @@
 				<div class="row">
 					<div class="col-6">
 						<div class="logo-area">
-							<a href=""><img src="assets/images/logo 1.png" border="0" alt="">Card</a>
+							<a href="index"><img src="assets/images/logo 1.png" border="0" alt="">Card</a>
 						</div>
 					</div>
 					<div class="col-6">
@@ -49,7 +49,7 @@
 		<section class="cards-area">
 			<div class="card-filter-area">
 				<ul>
-					<li><a href="all_cards.php">View All Cards</a></li>
+					<li><a href="all_cards">View All Cards</a></li>
 					<li class="active"><a href="my_cards.php">My Cards</a></li>
 				</ul>
 			</div>

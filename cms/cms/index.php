@@ -24,7 +24,7 @@
 			}
 			else {
 				$_SESSION["type"]= "user";
-				redirectfn("all_cards.php");
+				redirectfn("all_cards");
 			}
 			$_SESSION["user_id"]=$finduser["user_id"];
 			$_SESSION["email"]=$finduser["email"];
@@ -104,7 +104,18 @@
 				</div>
 				<div class="col-6">
 					<div class="login-button text-right">
+						<?php if(isset($_SESSION["name"])){
+							?>
+							<a href="logout">Hi <?=$_SESSION["name"]?> Logout !</a>
+							<?php
+						}else{
+							?>
 						<a href="" href="" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+							<?php
+						}
+						?>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -119,7 +130,17 @@
 						<h2><em>Adamjoshi</em></h2>
 						<h1>Collect & <span class="">Manage</span> <br> Your Cards</h1>
 						<p>Find Your Perfect Card & Collect Now</p>
-						<a href="" href="">Login</a>
+						<?php if(isset($_SESSION["name"])){
+							?>
+							<a href="">Hi <?=$_SESSION["name"]?></a>
+							<?php
+						}else{
+							?>
+						<a href="" href="" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+							<?php
+						}
+						?>
+						
 					</div>
 				</div>
 			</div>
@@ -130,6 +151,7 @@
 				<!-- <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a
 					typeface without relying on meaningful content. </p> -->
 					<p><?=$findmain["content"]?></p>
+					
 			</div>
 		</section>
 		<section class="recent-cards-area common-background-style"
@@ -142,6 +164,10 @@
 							<!-- <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
 								document or a typeface without relying on meaningful content. </p> -->
 							<p><?=$findrecent["content"]?></p>	
+
+							<div class="login-button ">
+								<a href="all_cards">All Cards</a>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-3">

@@ -1,6 +1,6 @@
 <?php include("init.php");
     
-    $link = "index.php";
+    $link = "index";
 
     foreach($_SESSION as $key=>$val)
     {

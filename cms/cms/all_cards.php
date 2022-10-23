@@ -30,12 +30,12 @@
 				<div class="row">
 					<div class="col-6">
 						<div class="logo-area">
-							<a href=""><img src="assets/images/logo 1.png" border="0" alt="">Card</a>
+							<a href="index"><img src="assets/images/logo 1.png" border="0" alt="">Card</a>
 						</div>
 					</div>
 					<div class="col-6">
 						<div class="login-button text-right">
-							<a href="">Hi <?=$_SESSION["name"]?></a>
+							<a href="logout">Hi <?=$_SESSION["name"]?> Logout !</a>
 						</div>
 					</div>
 				</div>
@@ -47,7 +47,9 @@
 			<div class="card-filter-area">
 				<ul>
 					<li class="active"><a href="">View All Cards</a></li>
-					<li><a href="my_cards.php">My Cards</a></li>
+					<?php if(isset($_SESSION["user_id"])){ ?>
+					<li><a href="my_cards">My Cards</a></li>
+					<?php } ?>
 				</ul>
 			</div>
 			<div class="cards-area-wrapper">
@@ -149,6 +151,7 @@
 		<script>
 			function collectNow(card_id)
 			{
+				<?php if(isset($_SESSION["user_id"])){ ?>
 				$("#"+card_id+"_card").addClass("active");
 				$.ajax({
 					url:"ajax/collectcard.php",
@@ -157,6 +160,11 @@
 				}).done(function(response){
 					swal("card collected","your card collected successfully","success");
 				});
+				<?php } else {
+					?>
+					swal("Login Failed","Your are not logged in","warning");
+					<?php
+				} ?>
 			}
 		</script>
 	</body>
